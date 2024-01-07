@@ -8,7 +8,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -40,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             R.id.btnSend -> {
                 val displayMessageIntent =
                     Intent(applicationContext, DisplayMessageActivity::class.java)
-                val message = findViewById<EditText>(R.id.etPhoneNumber).text.toString()
+                val message = findViewById<EditText>(R.id.editText).text.toString()
                 displayMessageIntent.putExtra(MY_MESSAGE, message)
                 startActivity(displayMessageIntent)
             }
