@@ -14,13 +14,13 @@
         android:weightSum="10">
 
         <EditText
-            android:id="@+id/etPhoneNumber"
+            android:id="@+id/editText"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="7"
             android:autofillHints="phone"
-            android:hint="@string/enter_your_phone_number"
-            android:inputType="phone"
+            android:hint="@string/enter_your_text"
+            android:inputType="text"
             android:textSize="16sp" />
 
         <Button
@@ -30,7 +30,7 @@
             android:layout_weight="3"
             android:text="@string/send"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -38,21 +38,21 @@
     <Button
         android:id="@+id/btnImplicitCustom"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:text="@string/implicit_custom"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnImplicitTelephone"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_marginBottom="10dp"
         android:text="@string/dial_phone"
-        android:textSize="16sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
 </LinearLayout>

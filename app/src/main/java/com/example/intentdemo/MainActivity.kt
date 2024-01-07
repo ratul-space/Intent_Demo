@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -55,7 +56,7 @@ class MainActivity : AppCompatActivity() {
             R.id.btnImplicitCustom -> {
                 val customIntent = Intent("dummy.intent.action.MY_ACTION")
                 startActivity(customIntent)
-                Log.d(TAG, "btnImplicitCustom: Clicked")
+//                Log.d(TAG, "btnImplicitCustom: Clicked")
             }
         }
     }
